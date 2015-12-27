@@ -1,0 +1,23 @@
+<template name="postSubmit">
+    <form class="main form">
+        <div class="form-group">
+            <label class="control-label" for="url">Photo</label>
+            <div class="controls">
+                <input type="file" name="photo" class="myFileInput">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="url">Author</label>
+            <div class="controls">
+                <input name="author" id="author" type="text" value="" placeholder="author" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="title">Place</label>
+            <div class="controls">
+                <input name="place" id="place" type="text" value="" placeholder="place" class="form-control"/>
+            </div>
+        </div>
+        <input type="submit" value="Add" class="btn btn-primary"/>
+    </form>
+</template>
