@@ -1,7 +1,5 @@
 Template.postItem.helpers({
-    public: function() {
-        var a = document.createElement('a');
-        a.src = this.photo;
-        return a.photo;
+    images: function () {
+        return Images.find(); // Where Images is an FS.Collection instance
     }
 });

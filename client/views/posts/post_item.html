@@ -1,7 +1,5 @@
 <template name="postItem">
-    <div class="post">
-        <div class="post-content">
-            <h3><img src="{{photo}}">{{place}}<span>{{author}}</span></h3>
-        </div>
+    <div>
+        <a href="{{this.url}}" target="_blank"><img src="{{this.url store='images' uploading='/images/uploading.gif' storing='/images/storing.gif'}}" alt="" class="thumbnail" /></a>
     </div>
 </template>
