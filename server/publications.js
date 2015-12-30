@@ -1,6 +1,6 @@
 Meteor.publish('images', function(){
-    return Images.find({}, {sort: {createdAt: -1}});
+    return Images.find();
 });
 Meteor.publish('posts', function(){
-    return Posts.find({}, {sort: {createdAt: -1}});
+    return Posts.find();
 });
