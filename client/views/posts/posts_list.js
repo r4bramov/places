@@ -1,5 +1,7 @@
 Template.postsList.helpers({
-    images: function() {
-        return Images.find();
+    posts: function() {
+        var Posts1 = Posts.find({}, {sort: {createdAt: -1}});
+        console.log(Posts1.fetch());
+        return Posts1
     }
 });
