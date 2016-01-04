@@ -27,3 +27,6 @@ audit-argument-checks
 check
 cfs:standard-packages
 cfs:gridfs
+cfs:filesystem
+percolate:migrations
+zimme:collection-timestampable
