@@ -12,9 +12,15 @@ Template.postSubmit.events({
                         author: $(event.target).find('[name=author]').val(),
                         place: $(event.target).find('[name=place]').val()
                     };
-                    post._id = Posts.insert(post);
+
+                    Meteor.call('postInsert', post, function(error, result) {
+                        if (error)
+                            return alert(error.reason);
+                        Router.go('postsList', {_id: result._id});
+                    });
+
                 }
             });
-        Router.go('postsList');
+        //Router.go('postsList');
     }
 });
