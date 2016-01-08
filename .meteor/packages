@@ -29,8 +29,5 @@ cfs:gridfs
 cfs:filesystem
 percolate:migrations
 zimme:collection-timestampable
-dsyko:meteor-node-csv
-meteorhacks:npm
 
 
-npm-container
