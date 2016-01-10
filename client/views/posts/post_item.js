@@ -1,6 +1,12 @@
-Template.postItem.helpers({
-    image: function () {
-        var img = Images.findOne(this.photo);
-        return img;
-    }
-});
+var image = { image: function () {
+		return Images.findOne(this.photo);
+	}
+};
+
+Template.postItem.helpers(
+	image
+);
+
+Template.postPage.helpers(
+	image
+);
