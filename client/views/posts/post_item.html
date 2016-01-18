@@ -5,11 +5,10 @@
                 <h3 class="panel-title">Author: {{author}}</h3>
             </div>
             <div class="panel-image hide-panel-body">
-
-                    {{#each images}}
-                        <img src="{{url}}"
-                             class="panel-image-preview" />
-                    {{/each}}
+                {{#each images}}
+                    <img src="{{url}}"
+                         class="panel-image-preview" />
+                {{/each}}
                         <!--<img src="http://s10.postimg.org/3zmjxygz9/image.jpg"-->
                              <!--class="panel-image-preview" />-->
                 <a href="{{pathFor 'postPage'}}">view</a>
