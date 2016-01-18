@@ -4,8 +4,10 @@
             <h3 class="panel-title">Author: {{author}}</h3>
         </div>
         <div class="panel-image hide-panel-body">
-            <img src="{{image.url}}"
-                 class="panel-image-preview" />
+            {{#each images}}
+                <img src="{{url}}"
+                     class="panel-image-preview" />
+            {{/each}}
         </div>
         <div class="panel-footer">
             Place: {{place}}

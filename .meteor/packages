@@ -31,3 +31,6 @@ percolate:migrations
 zimme:collection-timestampable
 
 
+cfs:graphicsmagick
+cfs:ui
+cfs:ejson-file
