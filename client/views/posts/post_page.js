@@ -7,3 +7,10 @@ Template.postPage.helpers({
         return mas;
     }
 });
+
+
+Template.postPage.helpers({
+    isActive: function () {
+        return (this.index === 0) ? 'active': '';
+    }
+});

@@ -2,19 +2,17 @@
     <div class="col-xs-12 col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Author: {{author}}</h3>
+                <h3 class="panel-title">Place: {{place}}</h3>
             </div>
             <div class="panel-image hide-panel-body">
-                {{#each images}}
-                    <img src="{{url}}"
-                         class="panel-image-preview" />
-                {{/each}}
+                    <a href="{{pathFor 'postPage'}}">
+                        {{#each images}}
+                                <img src= "{{url}} "
+                                     class="panel-image-preview img-responsive img-rounded" />
+                        {{/each}}
+                    </a>
                         <!--<img src="http://s10.postimg.org/3zmjxygz9/image.jpg"-->
                              <!--class="panel-image-preview" />-->
-                <a href="{{pathFor 'postPage'}}">view</a>
-            </div>
-            <div class="panel-footer">
-                Place: {{place}}
             </div>
         </div>
     </div>

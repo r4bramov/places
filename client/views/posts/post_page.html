@@ -4,21 +4,24 @@
             <h3 class="panel-title">Author: {{author}}</h3>
         </div>
         <div class="panel-image hide-panel-body">
-            {{#each images}}
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="{{@index}}" class=""></li>
-                    </ol>
+                    <!--<ol class="carousel-indicators">-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="" class=""></li>-->
+                    <!--</ol>-->
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="{{url @index}}" alt="">
-                            <div class="carousel-caption">
-                                ...
-                            </div>
+                    {{#each images}}
+                        <div class="item {{isActive}}">
+                            <li>
+                                <img src="{{url index=@index}}" alt="" class="img-responsive img-rounded">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </li>
                         </div>
+                    {{/each}}
                         ...
                     </div>
                     <!-- Controls -->
@@ -32,7 +35,6 @@
                     </a>
                 </div>
 
-            {{/each}}
         </div>
         <div class="panel-footer">
             Place: {{place}}

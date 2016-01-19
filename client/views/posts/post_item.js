@@ -4,6 +4,7 @@ Template.postItem.helpers({
         for (var i = 0, ln = this.photo.length; i < ln; i++) {
             mas.push(Images.findOne(this.photo[i]));
         }
+        console.log(mas);
         return mas;
     }
 });
