@@ -6,9 +6,11 @@
         <div class="panel-image hide-panel-body">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <!--<ol class="carousel-indicators">-->
-                        <!--<li data-target="#carousel-example-generic" data-slide-to="" class=""></li>-->
-                    <!--</ol>-->
+                    <ol class="carousel-indicators">
+                        {{#each images}}
+                        <li data-target="#carousel-example-generic" data-slide-to="{{@index}}" class=""></li>
+                        {{/each}}
+                    </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
